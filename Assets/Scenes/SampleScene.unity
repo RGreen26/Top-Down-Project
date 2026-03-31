@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 92113400}
   - component: {fileID: 92113399}
   - component: {fileID: 92113404}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: top-down-player_1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -155,6 +155,7 @@ MonoBehaviour:
   spr: {fileID: 92113402}
   moveSpeed: 3
   rb: {fileID: 92113400}
+  data: {fileID: 92113404}
   LookRightImage: {fileID: 1073667629885268723, guid: 9a4419c1619a32b44808b402a67af8b6, type: 3}
   lookUpImage: {fileID: -1457557174, guid: 9a4419c1619a32b44808b402a67af8b6, type: 3}
   KeyCollected: 0
@@ -292,7 +293,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 519420032}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &92113404
@@ -307,6 +309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3949b8f00b0bd64aa14c5195dd5a47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorOpen
+  data: {fileID: 92113399}
+  CanDestroy: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,12 +441,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 92113403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
@@ -1537,7 +1541,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 92113403}
   - {fileID: 1829811510}

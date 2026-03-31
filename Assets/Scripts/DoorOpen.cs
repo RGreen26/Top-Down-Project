@@ -26,25 +26,5 @@ public class DoorOpen : MonoBehaviour
             CanDestroy = false;
         }
 
-        // if (CanDestroy == true)
-        // {
-        //     if (Input.GetKeyDown(KeyCode.F))
-        //     {
-        //         Destroy("Door");
-        //     }
-           
-        // }
     }
-
-    // void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (CanDestroy == true)
-    //     {
-    //         if (Input.GetKeyDown(KeyCode.F))
-    //         {
-    //             Destroy(other.gameObject);
-    //         }
-           
-    //     }
-    // }
 }
